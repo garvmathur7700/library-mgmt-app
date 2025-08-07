@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // File Layout
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Environment Settings
+    "module": "nodenext",
+    "target": "esnext",
+    // "types": [], // REMOVED: This was preventing Node.js types from loading.
+
+    // Other Outputs
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Recommended Options
+    "strict": true,
+    "skipLibCheck": true, // Skips type checking of all declaration files (*.d.ts).
+    
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Module Settings
+    // "jsx": "react-jsx", // REMOVED: This is not needed for a Node.js API project.
+    "isolatedModules": true,
+    "moduleDetection": "force"
+  },
+  "include": ["src/**/*"] // It's good practice to specify which files to include.
+}
